@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 import java.util.Map;
 
 @EnableJpaRepositories(
-        basePackages = "space.changmin.server.repositories",
+        basePackages = "space.changmin.server",
         entityManagerFactoryRef = "primaryEntityManagerFactory",
         transactionManagerRef = "primaryTransactionManager"
 )
@@ -54,7 +54,8 @@ public class PrimaryDatasourceConfig {
         Map<String, Object> properties = hibernateProperties.determineHibernateProperties(jpaProperties.getProperties(), new HibernateSettings());
         return builder
                 .dataSource(dataSource)
-                .packages("space.changmin.server.models")
+                .packages("space.changmin.server")
+                .properties(properties)
                 .persistenceUnit("primary")
                 .build();
     }

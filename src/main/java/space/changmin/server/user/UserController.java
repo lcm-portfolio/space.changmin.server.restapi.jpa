@@ -1,4 +1,4 @@
-package space.changmin.server.authentication;
+package space.changmin.server.user;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import space.changmin.server.security.service.UserDetailsServiceImpl;
 
 /**
- * packageName    : space.changmin.server.controllers
+ * packageName    : space.changmin.server.user
  * fileName       : UserController
  * author         : CMLEE
  * date           : 2024-08-17
@@ -22,11 +22,17 @@ import space.changmin.server.security.service.UserDetailsServiceImpl;
 @RequestMapping("/user")
 public class UserController {
 
-    private final UserDetailsServiceImpl userService;
+    private final UserService userService;
 
     @PostMapping("/signup")
     public ResponseEntity<UserDTO> signUp(@RequestBody UserDTO userDTO) {
-        userService.signUp(userDTO);
+
+        try {
+            userService.signUp(userDTO);
+            return ResponseEntity.ok(userDTO);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().build();
+        }
     }
 
 

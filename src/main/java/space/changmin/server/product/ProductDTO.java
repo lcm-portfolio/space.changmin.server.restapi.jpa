@@ -1,5 +1,9 @@
-package space.changmin.server.product;/**
- *packageName    : space.changmin.server.product
+package space.changmin.server.product;
+
+import lombok.Data;
+
+/**
+ * packageName    : space.changmin.server.product
  * fileName       : ProductDTO
  * author         : CMLEE
  * date           : 2024-08-17
@@ -8,5 +12,10 @@ package space.changmin.server.product;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-17        CMLEE       최초 생성
- */public class ProductDTO {
+ */
+
+@Data
+public class ProductDTO {
+
+
 }

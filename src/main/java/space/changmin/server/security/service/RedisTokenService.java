@@ -1,17 +1,18 @@
-package com.example.demo.security.service;
+package space.changmin.server.security.service;
 
 
-import com.example.demo.exceptions.InvalidTokenException;
-import com.example.demo.security.JwtUtil;
+
 import lombok.RequiredArgsConstructor;
+
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import space.changmin.server.exception.InvalidTokenException;
+import space.changmin.server.security.JwtUtil;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author lcmqhdks202011@gmail.com
  * @see TokenService
  */
 @Service

@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package space.changmin.server.security;
 
 
 import io.jsonwebtoken.ExpiredJwtException;

@@ -1,5 +1,7 @@
-package space.changmin.server.order;/**
- *packageName    : space.changmin.server.order
+package space.changmin.server.order;
+
+/**
+ * packageName    : space.changmin.server.order
  * fileName       : OrderStatus
  * author         : CMLEE
  * date           : 2024-08-17
@@ -8,5 +10,7 @@ package space.changmin.server.order;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-17        CMLEE       최초 생성
- */public enum OrderStatus {
+ */
+public enum OrderStatus {
+    ORDER, CANCEL, COMPLETE, REFUND, EXCHANGE, DELIVERY, RETURN, WAITING
 }

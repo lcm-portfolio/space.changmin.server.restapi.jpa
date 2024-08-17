@@ -1,10 +1,11 @@
-package space.changmin.server.order;
+package space.changmin.server.lineorder;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
+import space.changmin.server.order.Order;
 import space.changmin.server.product.Product;
 
 import java.util.UUID;
@@ -34,10 +35,11 @@ public class LineOrder {
     private UUID id;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "order_id")
     private Order order;
 
-    @OneToOne(mappedBy = "id")
+    @ManyToOne (fetch = FetchType.LAZY)
+    @JoinColumn(name = "product_id")
     private Product product;
 
     private int price;

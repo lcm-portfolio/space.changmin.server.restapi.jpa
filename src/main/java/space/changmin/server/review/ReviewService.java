@@ -1,5 +1,9 @@
-package space.changmin.server.review;/**
- *packageName    : space.changmin.server.review
+package space.changmin.server.review;
+
+import org.springframework.stereotype.Service;
+
+/**
+ * packageName    : space.changmin.server.review
  * fileName       : ReviewService
  * author         : CMLEE
  * date           : 2024-08-18
@@ -8,5 +12,8 @@ package space.changmin.server.review;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-18        CMLEE       최초 생성
- */public class ReviewService {
+ */
+
+@Service
+public class ReviewService {
 }

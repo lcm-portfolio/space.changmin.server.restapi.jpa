@@ -1,4 +1,4 @@
-package space.changmin.server.exceptions;
+package space.changmin.server.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

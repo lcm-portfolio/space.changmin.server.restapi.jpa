@@ -1,4 +1,4 @@
-package com.example.demo.security.userdetails;
+package space.changmin.server.security.userdetails;
 
 import lombok.Builder;
 import lombok.Getter;

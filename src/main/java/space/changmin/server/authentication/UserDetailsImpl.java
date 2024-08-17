@@ -1,6 +1,9 @@
 package space.changmin.server.authentication;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -19,7 +22,10 @@ import java.util.Collection;
  */
 
 @Entity
-@Table
+@Table (name = "users")
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDetailsImpl implements UserDetails {
 
 

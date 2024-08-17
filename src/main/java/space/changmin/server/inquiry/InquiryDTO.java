@@ -1,5 +1,9 @@
-package space.changmin.server.inquiry;/**
- *packageName    : space.changmin.server.inquiry
+package space.changmin.server.inquiry;
+
+import lombok.Data;
+
+/**
+ * packageName    : space.changmin.server.inquiry
  * fileName       : InquiryDTO
  * author         : CMLEE
  * date           : 2024-08-18
@@ -8,5 +12,10 @@ package space.changmin.server.inquiry;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-18        CMLEE       최초 생성
- */public class InquiryDTO {
+ */
+
+@Data
+public class InquiryDTO {
+
+
 }

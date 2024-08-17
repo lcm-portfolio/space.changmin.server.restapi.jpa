@@ -1,4 +1,4 @@
-package space.changmin.server.authentication;
+package space.changmin.server.user;
 
 import lombok.Data;
 

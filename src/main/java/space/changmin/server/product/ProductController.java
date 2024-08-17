@@ -1,4 +1,4 @@
-package space.changmin.server.controllers;
+package space.changmin.server.product;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

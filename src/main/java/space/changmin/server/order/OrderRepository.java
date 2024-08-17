@@ -1,5 +1,13 @@
-package space.changmin.server.order;/**
- *packageName    : space.changmin.server.order
+package space.changmin.server.order;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.UUID;
+
+/**
+ * packageName    : space.changmin.server.order
  * fileName       : OrderRepository
  * author         : CMLEE
  * date           : 2024-08-17
@@ -8,5 +16,10 @@ package space.changmin.server.order;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-17        CMLEE       최초 생성
- */public class OrderRepository {
+ */
+public interface OrderRepository extends JpaRepository<Order, UUID> {
+
+
+    Page<Order> findAllByUserId(UUID userId, Pageable pageable);
+
 }

@@ -1,5 +1,7 @@
-package space.changmin.server.controllers;/**
- *packageName    : space.changmin.server.controllers
+package space.changmin.server.review;
+
+/**
+ * packageName    : space.changmin.server.controllers
  * fileName       : ReviewController
  * author         : CMLEE
  * date           : 2024-08-17
@@ -8,5 +10,6 @@ package space.changmin.server.controllers;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-17        CMLEE       최초 생성
- */public class ReviewController {
+ */
+public class ReviewController {
 }

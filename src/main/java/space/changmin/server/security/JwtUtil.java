@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package space.changmin.server.security;
 
 public class JwtUtil {
     public static final String AUTHORIZATION_HEADER = "Authorization";

@@ -1,9 +1,9 @@
-package space.changmin.server.authentication;
+package space.changmin.server.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
+import space.changmin.server.user.User;
 
+import java.util.Optional;
 import java.util.UUID;
 
 /**
@@ -17,7 +17,9 @@ import java.util.UUID;
  * -----------------------------------------------------------
  * 2024-08-17        CMLEE       최초 생성
  */
-public interface UserRepository extends JpaRepository<User, UUID> {
+public interface UserRepository extends JpaRepository<User, String> {
+
+    Optional<User> findByUsername(String username);
 
 
 }

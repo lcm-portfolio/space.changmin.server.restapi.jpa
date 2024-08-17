@@ -1,4 +1,4 @@
-package space.changmin.server.order;
+package space.changmin.server.lineorder;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

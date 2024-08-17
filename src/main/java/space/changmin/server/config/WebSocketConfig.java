@@ -1,5 +1,7 @@
-package space.changmin.server.config;/**
- *packageName    : space.changmin.server.config
+package space.changmin.server.config;
+
+/**
+ * packageName    : space.changmin.server.config
  * fileName       : WebSocketConfig
  * author         : CMLEE
  * date           : 2024-08-18
@@ -8,5 +10,8 @@ package space.changmin.server.config;/**
  * DATE              AUTHOR             NOTE
  * -----------------------------------------------------------
  * 2024-08-18        CMLEE       최초 생성
- */public class WebSocketConfig {
+ */
+
+
+public class WebSocketConfig {
 }
